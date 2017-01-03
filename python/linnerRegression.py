@@ -19,7 +19,7 @@ forecast_col = 'Adj. Close'
 df.fillna(value=-99999, inplace=True)
 print(df.descibe())
 forecast_out = int(math.ceil(0.01 * len(df)))
-df['label'] = df[forecast_col].shift(-forecast_out)
+df['label'] = df[forecast_col].shift(-forecast_out)         #move the data not the index
 X = np.array(df.drop(['label'], 1))
 X = preprocessing.scale(X)
 X_lately = X[-forecast_out:]
