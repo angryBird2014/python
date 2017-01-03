@@ -1,9 +1,9 @@
 import quandl
-import pandas
 import math
 import numpy as np
 from sklearn import linear_model
 from sklearn import preprocessing,cross_validation
+import pandas
 
 df = quandl.get('WIKI/GOOGL')
 df = df[['Adj. Open','Adj. High','Adj. Low','Adj. Close','Adj. Volume']]
