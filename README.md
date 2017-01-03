@@ -1,0 +1,3 @@
+# python_machineLearning_basic
+
+主要是存放一些机器学习python代码，熟悉一下pandas和sklearn等
